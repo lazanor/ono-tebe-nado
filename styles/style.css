@@ -1,51 +1,56 @@
 /* место для вашего кода */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;    
+    align-items: center;
     margin: 92px 24px 96px 24px;
 }
 
-.menu {
-    
+.header__menu {    
     display: flex;
-    gap: 28px;
-    list-style: circle;
-
-}
-
-.menu-current {
-    list-style: none;
-}
-
-.menu-current a {
-    text-decoration: none;
-}
-
-.menu-header {
     flex-direction: row;
+    gap: 32px;
+    list-style: circle;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    text-align: left;
+    margin-left: 26px;
 }
 
-.menu-footer {
-    flex-direction: column;
+.header__menu li a {
+    text-decoration: none;
+    
+}
+
+.header__menu-current {
     list-style: none;
-    align-items: center;
-    gap: 0;
+}
+
+.header__menu-item {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5px;
 }
 
 .logo-black {
     width: 148px;
     height: 105px;
+    margin-left: -140px;
 }
 
-.contacts {
+.header__contacts {
     list-style: none;
-}
-
-.black-circle {
-    border-radius: 50%;
-    background-color: black;
     width: 240px;
-    height: 240px;
+    height: 98px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 .logo-white {
@@ -70,18 +75,18 @@
 }
 
 /*настраиваем стиль заголовка*/
-.jambotron-title {
+.jambotron__title {
     display: block;
     font-family: Raleway;
     font-size: 100px;
     font-weight: 700;
     line-height: 115px;
     letter-spacing: 0.3em;
-    text-align: left;
-
+    margin-bottom: 147px;
+    text-transform: uppercase;
 }
 
-.jambotron-title-left {
+.jambotron__title-left {
     margin-left: 50px;
     line-height: 115px;
     letter-spacing: 0.3em;
@@ -89,7 +94,7 @@
 
 }
 
-.jambotron-title-center {
+.jambotron__title-center {
     margin-left: 336px;
     line-height: 100px;
     letter-spacing: 0.3em;
@@ -97,31 +102,74 @@
 
 }
 
-.jambotron-title-right {
+.jambotron__title-right {
     margin-left: 633px;
     line-height: 100px;
     letter-spacing: 0.6em;
     text-align: right;
 }
 
-.jambotron-title-left-no {    
+.jambotron__title-left-no {    
     line-height: 115px;
     letter-spacing: 0.6em;
     text-align: left;
 
 }
 
-.jambotron-title-left-be {
+.jambotron__title-left-be {
     line-height: 100px;
     letter-spacing: 0.6em;
     text-align: left;
 
 }
 
-.jambotron-title-left-ad {
+.jambotron__title-left-ad {
     line-height: 100px;
     letter-spacing: 0.3em;
     text-align: right;
+
+}
+
+.jambotron__subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 78px;
+    margin-right: 50px;
+    margin-bottom: 62px;
+    
+    
+}
+
+.jambotron__subtitle-text {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.jambotron__subtitle-whitespace-1 {    
+    word-spacing: 0.9em;
+}
+
+.jambotron__subtitle-whitespace-2 {    
+    word-spacing: 0.8em;
+}
+
+.jambotron__subtitle-btn {
+    background-color: rgba(0, 0, 0, 0);    
+    color: #fff;
+    width: 256px;
+    height: 51px;  
+    border: 1px solid #fff;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
+    text-transform: uppercase;
 
 }
 
@@ -218,10 +266,6 @@
     font-weight: 400;
     text-align: left;    
     margin-left: 40px;
-    /* сдвинем подчеркивание ссылки ниже */
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 1px;
 }
 
 /* настройка секции об аукционе */
@@ -229,9 +273,80 @@
 .about {
     display: flex;
     justify-content: space-between;
-    gap:10px;
-    margin: 146px 24px 96px 24px;
+    align-items: start;
+    gap:72px;
+    margin: 146px 24px 0px 24px;
 }
+
+.about__white-logo {
+    border-radius: 50%;
+    background-color: black;
+    min-width: 240px;
+    height: 240px;
+    margin-left: 47px;
+    margin-top: 35px;
+    padding: 64px 45px 62px 46px;
+}
+
+.about__text {
+    /*font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;*/
+    margin-top: 133px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+.about__text-subtitle {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+
+}
+
+.about__text p {    
+    
+    margin-right: 5px;
+    width: 688px;
+}
+
+.about__text-first-p {
+    margin-bottom: 24px;
+}
+
+/* я это конечно сделал, но при политике пиксель перфект дизайнера за это надо бить, возможно ногами  */
+.about__text-span1 {
+    letter-spacing: 0em;
+}
+
+.about__text-span2 {    
+    letter-spacing: 0.02em;    
+}
+
+.about__text-span3 {    
+    letter-spacing: -0.01em;
+}
+
+.about__text-span4 {    
+    letter-spacing: 0.03em;
+}
+
+.about__text-span4 {    
+    letter-spacing: 0.04em;
+}
+
+
 
 /* свойства футтера */
 
@@ -239,17 +354,52 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 180px 24px 180px 24px;
+    margin: 180px 50px 88px 50px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
 }
 
-.socialmedia {
+.footer__contacts {
+    list-style: none;
+    width: 240.52px;
+    height: 98px;
+    
+
+
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    gap: 0;    
+}
+
+.footer__menu-current {
+    text-decoration: none;
+}
+
+.footer__socialmedia {
     display: flex;
     flex-direction: row;
     gap: 48px;
     list-style: none;
+    margin-right: 0px;
 }
 
-.socialmedia img {
+.footer__socialmedia img {
     width: 48px;
     height: 48px;
+}
+
+
+/* на макете большинство подчеркиваний текста не станартные, а ниже, класс ниже для реализации такой заморочки 
+не забыть проверить, что я везде поменял индивидуальные стили на этот общий класс*/
+.custom-underline {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
 }
