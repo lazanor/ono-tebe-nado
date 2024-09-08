@@ -221,7 +221,7 @@
 
 /* устанавливаем фоновые изображения для карточки каждого лота */
 
-.lot-01 {
+.lots__lot-01 {
   background: url(../images/card-lot-01.jpg) rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-repeat: no-repeat;
@@ -229,7 +229,7 @@
   background-blend-mode: multiply;
 }
 
-.lot-02 {
+.lots__lot-02 {
   background: url(../images/card-lot-02.jpg) rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@
   background-blend-mode: multiply;
 }
 
-.lot-03 {
+.lots__lot-03 {
   background: url(../images/card-lot-03.jpg) rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-repeat: no-repeat;
