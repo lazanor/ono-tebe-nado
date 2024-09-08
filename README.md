@@ -7,4 +7,4 @@
 ## Установка
 Просто скачайте или клонируйте репозиторий
 
-```git clone git@github.com:lazanor/ono-tebe-nado.git
+```git clone git@github.com:lazanor/ono-tebe-nado.git```
