@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  list-style: circle;  
+  list-style: circle;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
@@ -37,7 +37,7 @@ body {
   height: 105px;
 }
 
-.address {  
+.address {
   font-style: normal;
   width: 376px;
   min-height: 98px;
@@ -84,7 +84,6 @@ body {
   margin-bottom: 135px;
   text-transform: uppercase;
   line-height: 120px;
-  letter-spacing: 0.3em;
   text-align: left;
 }
 
@@ -103,7 +102,7 @@ body {
   text-align: right;
 }
 
-.jambotron__title-letter-spacing-0_6em {  
+.jambotron__title-letter-spacing-0_6em {
   letter-spacing: 0.6em;
 }
 
@@ -211,7 +210,7 @@ body {
 
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);  
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -219,17 +218,17 @@ body {
 /* устанавливаем фоновые изображения для карточки каждого лота */
 
 .lots__lot-01 {
-  background-image: url(../images/card-lot-01.jpg);  
+  background-image: url(../images/card-lot-01.jpg);
   z-index: -2;
 }
 
 .lots__lot-02 {
-  background-image: url(../images/card-lot-02.jpg);  
+  background-image: url(../images/card-lot-02.jpg);
   z-index: -2;
 }
 
 .lots__lot-03 {
-  background-image: url(../images/card-lot-03.jpg);  
+  background-image: url(../images/card-lot-03.jpg);
   z-index: -2;
 }
 
@@ -322,7 +321,7 @@ body {
 }
 
 .footer__address {
-  width: 240px;  
+  width: 240px;
   padding-left: 0;
 }
 
