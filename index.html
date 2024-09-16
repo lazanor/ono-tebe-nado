@@ -49,30 +49,31 @@
 
     <main>
       <section class="jambotron" id="jambotron">
+        <div class="overlay"></div>
         <h1 class="jambotron__title">
           <span class="jambotron__title-left">
-            о<span class="jambotron__title-letter-spacing-0_6em">но</span>
+            о<span class="jambotron__title-extended">но</span>
           </span>
           <span class="jambotron__title-center">
-            те<span class="jambotron__title-letter-spacing-0_6em">бе</span>
+            те<span class="jambotron__title-extended">бе</span>
           </span>          
           <span class="jambotron__title-right">
-            <span class="jambotron__title-letter-spacing-0_6em">н</span>адо
+            <span class="jambotron__title-extended">н</span>адо
           </span>
         </h1>
         <div class="jambotron__subtitle">
           <h2 class="jambotron__subtitle-text">
-            <span class="jambotron__subtitle-word-spacing-0_9em">
+            <span class="jambotron__subtitle-word-spacing-wider">
               Аукцион вещей,
             </span>
-            <span class="jambotron__subtitle-word-spacing-0_8em"> в которые </span>
-            <span class="jambotron__subtitle-word-spacing-0_9em">никто не верил</span>
+            <span class="jambotron__subtitle-word-spacing-wide"> в которые </span>
+            <span class="jambotron__subtitle-word-spacing-wider">никто не </span>верил
           </h2>
           <button
             name="btn-make-bet"
             type="button"
             class="jambotron__subtitle-btn"
-          >
+          />
             сделать ставку
           </button>
         </div>
@@ -81,40 +82,47 @@
       <section class="lots" id="lots">
         <h2 class="lots__title">лоты</h2>
         <ul class="lots-list">
-          <li class="card lots__lot-01">
+          <li class="card lots__lot-film">
             <div class="overlay"></div>
-            <h3 class="lots__card-subtitle">
-              Фильм режиссёра, который бросил киношколу
-            </h3>
-            <p class="lots__card-text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
+            <div class="lots__card-content">              
+              <h3 class="lots__card-subtitle">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="lots__card-text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </div>
+            
           </li>
-          <li class="card lots__lot-02">
+          <li class="card lots__lot-book">
             <div class="overlay"></div>
-            <h3 class="lots__card-subtitle">
-              Книга, где описан один скучный день из жизни рекламного агента
-            </h3>
-            <p class="lots__card-text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
+            <div class="lots__card-content">
+              <h3 class="lots__card-subtitle">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="lots__card-text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно рассказывается
+                о 16 июня 1904 года и об истории литературы, начиная с античных
+                времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+                бы вы поставили на «Улисса» Джеймса Джойса?
+              </p>
+          </div>
           </li>
-          <li class="card lots__lot-03">
+          <li class="card lots__lot-paint">
             <div class="overlay"></div>
-            <h3 class="lots__card-subtitle">
-              Картина, которую повторит даже 5-летний сын маминой подруги
-            </h3>
-            <p class="lots__card-text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
+            <div class="lots__card-content">
+              <h3 class="lots__card-subtitle">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="lots__card-text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+                похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+                Сколько бы вы на такое поставили, если бы не знали, что это — одна
+                из революционных работ Кандинского?
+              </p>
+            </div>
           </li>
                     
         </ul>
@@ -133,26 +141,25 @@
         </div>
         <div class="about__text">
           <h2 class="about__text-subtitle">Об аукционе</h2>
-          <p class="about__text-first-p">
+          <p class="about__text-internal-paragraph">
             Здесь вы не встретите очередное
             <span class="about__text-letter-spacing-base">
               пафосное собрание невероятно дорогого антиквариата.
             </span>
-            <span class="about__text-letter-spacing-0_02em">Наши</span> лоты вообще не должны
-            <span class="about__text-letter-spacing-0_01em">были попасть</span> ни на один
-            аукцион. Потому что кому нужен
-            <span class="about__text-letter-spacing-0_03em">дневник</span> девочки-подростка или
-            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?
+            Наши лоты вообще не должны <span class="about__text-letter-spacing-pressed">были попасть</span> ни на <span class="about__text-letter-spacing-pressed">один</span>
+            аукцион. <span class="about__text-letter-spacing-pressed">Потому что </span> кому нужен
+            <span class="about__text-letter-spacing-wider"> дневник </span> <span class="about__text-letter-spacing-pressed"> девочки-подростка</span> 
+            или картина, которую может <span class="about__text-letter-spacing-pressed"></span>нарисовать даже ребёнок?</span> <span class="about__text-letter-spacing-base"></span>Кому нужны все эти
+            странные вещи, созданные любителями?</span>
           </p>
           <p>
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            <span class="about__text-letter-spacing-base"> Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-            Когда-то <span class="about__text-letter-spacing-0_04em">они</span> казались просто
-            неудачными. Но, несмотря на критику, кажущуюся простоту или
-            сложность, сейчас без этих лотов невозможно представить современную
-            культуру. Когда в эти вещи не верил никто, продолжали верить их
-            создатели. И сейчас эти лоты стали культовыми.
+            Когда-то </span><span class="about__text-letter-spacing-wider">они</span> <span class="about__text-letter-spacing-base">казались просто</span>
+            <span class="about__text-letter-spacing-wider"> неудачными.</span> <span class="about__text-letter-spacing-base"> Но, несмотря на критику, кажущуюся простоту или
+            сложность, сейчас без этих лотов невозможно<span class="about__text-letter-spacing-wide"> представить современную
+            культуру. Когда в </span> эти вещи не верил никто, продолжали верить их</span>
+            создатели. И сейчас эти лоты стали культовыми.</span>
           </p>
         </div>
       </section>
